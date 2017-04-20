@@ -1,5 +1,3 @@
-# SafetyProject
-
 ## Automatic Verification of JVM Bytecode Programs
 
 ### Custom static assertions
@@ -17,6 +15,12 @@ public class Main {
   }
 }
 ```
+
+```
+$ SafetyProject MyMath.java
+Safe!
+```
+
 
 ### Automatic Error Detection
 
@@ -42,3 +46,7 @@ public class MyMath {
 $ SafetyProject MyMath.java
 Possible division by 0!
 ```
+
+## References
+[Microsoft Z3 Theorem Prover](https://github.com/Z3Prover/z3)
+[Sawja Static Analysis Workshop for Java](http://sawja.inria.fr/)
