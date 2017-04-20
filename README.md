@@ -17,7 +17,7 @@ public class Main {
 ```
 
 ```
-$ SafetyProject MyMath.java
+$ wunderhorn MyMath.java
 Safe!
 ```
 
@@ -43,7 +43,7 @@ public class MyMath {
 ```
 
 ```
-$ SafetyProject MyMath.java
+$ wunderhorn MyMath.java
 Possible division by 0!
 ```
 
