@@ -1,6 +1,14 @@
 ## Automatic Verification of JVM Bytecode Programs
 
-Wunderhorn is a tool for the automatic static analysis of Java Programs.
+```
+sudo make configure
+make
+sudo make install
+
+```
+
+Wunderhorn is a tool, built in [OCaml](http://ocaml.org/),
+for the automatic static analysis of Java Programs.
 Wunderhorn is an integration of powerful existing technologies:
 
   * [Sawja](http://sawja.inria.fr/) is used to reduce JVM bytecode programs to
@@ -109,6 +117,9 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
 </center>
 
 ## References
+
 [Microsoft Z3 Theorem Prover](https://github.com/Z3Prover/z3)
+
 [Sawja Static Analysis Workshop for Java](http://sawja.inria.fr/)
+
 [Duality](https://www.microsoft.com/en-us/research/project/duality/)
