@@ -1,10 +1,13 @@
 ## Automatic Verification of JVM Bytecode Programs
 
 ```
-sudo make configure
-make
-sudo make install
-
+$ git clone
+$ sudo make configure
+$ make
+$ sudo make install
+$ cd example
+$ wunderhorn Fib.java
+Safe!
 ```
 
 Wunderhorn is a tool, built in [OCaml](http://ocaml.org/),
@@ -25,7 +28,7 @@ Wunderhorn allows users to specify custom properties for their programs. In this
 example, the user wants to make sure that their naive implementation of her Fibonnaci
 function implementation always returns a non-negative value.
 
-```Java
+```java
 public class Fib {
   public static int fib(int n) {
     if (n <= 0) return 0;
@@ -45,7 +48,6 @@ $ wunderhorn Fib.java
 Safe!
 ```
 
-
 ### Automatic Error Detection
 
 Wunderhorn also performs *automatic* error detection. In this example, the user has
@@ -54,7 +56,7 @@ two integers. However, this particular implementation is partial. Computing the
 LCM of 0 and 0 results in a division by 0. Wunderhorn finds this particular bug
 and alerts the user so she can fix it.
 
-```Java
+```java
 public class LCM {
   static int gcd(int a, int b) {
     int t;
