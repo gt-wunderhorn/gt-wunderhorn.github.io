@@ -22,7 +22,7 @@ Wunderhorn is an integration of powerful existing technologies:
     solvers. We use the [Duality](https://www.microsoft.com/en-us/research/project/duality/)
     engine to solve CHC systems.
 
-### Custom static assertions
+### Custom Static Assertions
 
 Wunderhorn allows users to specify custom properties for their programs. In this
 example, the user wants to make sure that this naive implementation of the Fibonnaci
@@ -52,7 +52,7 @@ Safe!
 
 Wunderhorn also performs *automatic* error detection. In this example, the user has
 written an implementation of a function for finding the *least common multiple* of
-two integers. However, this particular implementation is partial. Computing the
+two integers. However, this particular implementation is problematic. Computing the
 LCM of 0 and 0 results in a division by 0. Wunderhorn finds this particular bug
 and alerts the user so she can fix it.
 
