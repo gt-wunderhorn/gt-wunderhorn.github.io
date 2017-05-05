@@ -103,7 +103,7 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
 
       <td style="border-collapse: collapse; border: none;">
           <figure>
-            <img src="mug-shot/eden.png" width="150px"/>
+            <img src="mug-shot/eden.jpg" width="150px"/>
             <figcaption>Michael Eden</figcaption>
           </figure>
       </td>
