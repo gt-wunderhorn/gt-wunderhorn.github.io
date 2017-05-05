@@ -2,6 +2,6 @@ author:
   fullname: Wunderhorn
   github: 'https://github.com/gt-wunderhorn/gt-wunderhorn'
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 
 linenos: true
