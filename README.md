@@ -78,7 +78,7 @@ Division by 0 possible at LCM.lcm line 13.
 Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
 
 <center>
-  <table>
+  <table style="border-collapse: collapse; border: none;">
     <tr>
       <td>
         <a href="http://daheath.github.io">
