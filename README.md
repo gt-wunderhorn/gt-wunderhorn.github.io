@@ -79,8 +79,11 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
 
 <div>
   <center>
-    <a href="http://daheath.github.io"><img src="mug-shot/heath.jpg" width="150px"></a>
-
+    <a href="http://daheath.github.io">
+    <figure>
+      <img src="mug-shot/heath.jpg" width="150px"></a>
+      <figcaption>David Heath</figcaption>
+    </figure>
     <img src="mug-shot/test.jpg" width="150px"/>
     <img src="mug-shot/test2.jpg" width="150px"/>
   </center>
