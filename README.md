@@ -80,7 +80,7 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
 <center>
   <table>
     <tr style="border-collapse: collapse; border: none;">
-      <td>
+      <td style="border-collapse: collapse; border: none;">
         <a href="http://daheath.github.io">
           <figure>
             <img src="mug-shot/heath.jpg" width="150px">
@@ -89,7 +89,7 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
         </a>
       </td>
 
-      <td>
+      <td style="border-collapse: collapse; border: none;">
         <a href="http://www.cc.gatech.edu/~wharris">
           <figure>
             <img src="mug-shot/eden.jpg" width="150px"/>
@@ -98,7 +98,7 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
         </a>
       </td>
 
-      <td>
+      <td style="border-collapse: collapse; border: none;">
         <a href="http://www.cc.gatech.edu/~wharris">
           <figure>
             <img src="mug-shot/harris.jpg" width="150px">
