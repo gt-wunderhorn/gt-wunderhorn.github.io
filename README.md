@@ -27,8 +27,8 @@ Wunderhorn is an integration of powerful existing technologies:
 ### Custom static assertions
 
 Wunderhorn allows users to specify custom properties for their programs. In this
-example, the user wants to make sure that their naive implementation of her Fibonnaci
-function implementation always returns a non-negative value.
+example, the user wants to make sure that this naive implementation of the Fibonnaci
+function always returns a non-negative value.
 
 ```java
 public class Fib {
