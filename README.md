@@ -11,7 +11,8 @@ $ wunderhorn Fib.java
 Safe!
 ```
 
-Wunderhorn is a tool, built in [OCaml](http://ocaml.org/),
+[Wunderhorn](https://github.com/gt-wunderhorn/gt-wunderhorn)
+is a tool, built in [OCaml](http://ocaml.org/),
 for the automatic static analysis of Java Programs.
 Wunderhorn is an integration of powerful existing technologies:
 
