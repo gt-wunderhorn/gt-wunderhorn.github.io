@@ -1,7 +1,8 @@
 ## Automatic Verification of JVM Bytecode Programs
 
 ```
-$ git clone
+$ git clone https://github.com/gt-wunderhorn/gt-wunderhorn
+$ cd gt-wunderhorn
 $ sudo make configure
 $ make
 $ sudo make install
