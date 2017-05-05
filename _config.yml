@@ -3,6 +3,6 @@ author:
   github: 'https://github.com/gt-wunderhorn/gt-wunderhorn'
 
 theme: jekyll-theme-cayman
-title: Wunderhorn, Automatic JVM Program Verification
+title: Wunderhorn
 
 linenos: true

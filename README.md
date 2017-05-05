@@ -9,6 +9,8 @@ $ wunderhorn Fib.java
 Safe!
 ```
 
+## Automatic JVM Program Verification
+
 [Wunderhorn](https://github.com/gt-wunderhorn/gt-wunderhorn)
 is a tool, built in [OCaml](http://ocaml.org/),
 for the automatic static analysis of Java Programs.
