@@ -1,4 +1,7 @@
-github: 'https://github.com/gt-wunderhorn/gt-wunderhorn'
+author:
+  fullname: Wunderhorn
+  github: 'https://github.com/gt-wunderhorn/gt-wunderhorn'
+
 theme: jekyll-theme-slate
 
 linenos: true
