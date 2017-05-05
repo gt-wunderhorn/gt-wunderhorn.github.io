@@ -90,7 +90,7 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
 
     <a href="http://www.cc.gatech.edu/~wharris">
       <figure>
-        <img src="mug-shot/harris.jpg" width="150px"/>
+        <img src="mug-shot/harris.jpg" width="150px">
         <figcaption>David Heath</figcaption>
       </figure>
     </a>
