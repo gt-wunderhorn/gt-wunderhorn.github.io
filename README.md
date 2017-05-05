@@ -78,9 +78,11 @@ Division by 0 possible at LCM.lcm line 13.
 Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
 
 <div>
-  <a href="http://daheath.github.io"><img src="mug-shot/heath.jpg" width="150px"/>
-  <img src="mug-shot/test.jpg" width="150px"/>
-  <img src="mug-shot/test2.jpg" width="150px"/>
+  <center>
+    <a href="http://daheath.github.io"><img src="mug-shot/heath.jpg" width="150px"/>
+    <img src="mug-shot/test.jpg" width="150px"/>
+    <img src="mug-shot/test2.jpg" width="150px"/>
+  </center>
 </div>
 
 ## References
