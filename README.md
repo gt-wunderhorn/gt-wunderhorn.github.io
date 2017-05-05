@@ -77,7 +77,9 @@ Division by 0 possible at LCM.lcm line 13.
 
 Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
 
-![David Heath](mug-shot/heath.jpg "title-1") ![alt-text-2](image2.png "title-2")
+![David Heath](mug-shot/heath.jpg =150x)
+![David Heath](mug-shot/heath.jpg =150x)
+![David Heath](mug-shot/heath.jpg =150x)
 
 
 ## References
