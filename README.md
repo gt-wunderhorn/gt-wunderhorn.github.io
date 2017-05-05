@@ -1,5 +1,3 @@
-## Automatic Verification of JVM Bytecode Programs
-
 ```
 $ git clone https://github.com/gt-wunderhorn/gt-wunderhorn
 $ cd gt-wunderhorn
