@@ -77,36 +77,38 @@ Division by 0 possible at LCM.lcm line 13.
 
 Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
 
-<table>
-  <tr>
-    <td>
-      <a href="http://daheath.github.io">
-        <figure>
-          <img src="mug-shot/heath.jpg" width="150px">
-          <figcaption>David Heath</figcaption>
-        </figure>
-      </a>
-    </td>
+<center>
+  <table>
+    <tr>
+      <td>
+        <a href="http://daheath.github.io">
+          <figure>
+            <img src="mug-shot/heath.jpg" width="150px">
+            <figcaption>David Heath</figcaption>
+          </figure>
+        </a>
+      </td>
 
-    <td>
-      <a href="http://www.cc.gatech.edu/~wharris">
-        <figure>
-          <img src="mug-shot/eden.jpg" width="150px"/>
-          <figcaption>Michael Eden</figcaption>
-        </figure>
-      </a>
-    </td>
+      <td>
+        <a href="http://www.cc.gatech.edu/~wharris">
+          <figure>
+            <img src="mug-shot/eden.jpg" width="150px"/>
+            <figcaption>Michael Eden</figcaption>
+          </figure>
+        </a>
+      </td>
 
-    <td>
-      <a href="http://www.cc.gatech.edu/~wharris">
-        <figure>
-          <img src="mug-shot/harris.jpg" width="150px">
-          <figcaption>Bill Harris</figcaption>
-        </figure>
-      </a>
-    </td>
-  </tr>
-</table>
+      <td>
+        <a href="http://www.cc.gatech.edu/~wharris">
+          <figure>
+            <img src="mug-shot/harris.jpg" width="150px">
+            <figcaption>Bill Harris</figcaption>
+          </figure>
+        </a>
+      </td>
+    </tr>
+  </table>
+</center>
 
 ## References
 [Microsoft Z3 Theorem Prover](https://github.com/Z3Prover/z3)
