@@ -75,7 +75,10 @@ $ wunderhorn LCM.java
 Division by 0 possible at LCM.lcm line 13.
 ```
 
-Wunderhorn automatically checks for division by 0, and array out of bounds accesses.
+Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
+
+![David Heath](mug-shot/heath.jpg "title-1") ![alt-text-2](image2.png "title-2")
+
 
 ## References
 [Microsoft Z3 Theorem Prover](https://github.com/Z3Prover/z3)
