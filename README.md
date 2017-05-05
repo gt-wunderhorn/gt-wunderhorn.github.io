@@ -102,10 +102,12 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
       </td>
 
       <td style="border-collapse: collapse; border: none;">
+        <a href="http://icanteden.com">
           <figure>
             <img src="mug-shot/eden.jpg" width="150px"/>
             <figcaption>Michael Eden</figcaption>
           </figure>
+        </a>
       </td>
 
       <td style="border-collapse: collapse; border: none;">
