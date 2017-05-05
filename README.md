@@ -77,28 +77,7 @@ Division by 0 possible at LCM.lcm line 13.
 
 Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
 
-<div>
-  <center>
-    <a href="http://daheath.github.io">
-      <figure>
-        <img src="mug-shot/heath.jpg" width="150px">
-        <figcaption>David Heath</figcaption>
-      </figure>
-    </a>
-    <a href="http://www.cc.gatech.edu/~wharris">
-      <figure>
-        <img src="mug-shot/eden.jpg" width="150px"/>
-        <figcaption>Michael Eden</figcaption>
-      </figure>
-    </a>
-    <a href="http://www.cc.gatech.edu/~wharris">
-      <figure>
-        <img src="mug-shot/harris.jpg" width="150px">
-        <figcaption>Bill Harris</figcaption>
-      </figure>
-    </a>
-  </center>
-</div>
+<div> <center> <a href="http://daheath.github.io"> <figure> <img src="mug-shot/heath.jpg" width="150px"> <figcaption>David Heath</figcaption> </figure> </a> <a href="http://www.cc.gatech.edu/~wharris"> <figure> <img src="mug-shot/eden.jpg" width="150px"/> <figcaption>Michael Eden</figcaption> </figure> </a> <a href="http://www.cc.gatech.edu/~wharris"> <figure> <img src="mug-shot/harris.jpg" width="150px"> <figcaption>Bill Harris</figcaption> </figure> </a> </center> </div>
 
 ## References
 [Microsoft Z3 Theorem Prover](https://github.com/Z3Prover/z3)
