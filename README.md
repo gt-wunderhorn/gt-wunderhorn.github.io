@@ -1,63 +1,25 @@
-test
-```
-$ git clone https://github.com/gt-wunderhorn/gt-wunderhorn
-$ cd gt-wunderhorn
-$ sudo make configure
-$ make
-$ sudo make install
-$ cd example
-$ wunderhorn Fib.java
-Safe!
-```
+# Automatic JVM Safety Verification Using wunderhorn
 
-## Automatic JVM Program Verification
+`wunderhorn` is a tool that takes a program `P` and a _safety
+property_ `Q` and attempts to determine if `P` satisfies `Q`. A
+program can be any program represented as Java source or a JVM
+bytecode classfile. A safety property is an assertion. If each run of
+a program `P` that reaches an assertion `Q` satisfies the condition of
+`Q`, then `P` satisfies `Q`.
 
-[Wunderhorn](https://github.com/gt-wunderhorn/gt-wunderhorn)
-is a tool, built in [OCaml](http://ocaml.org/),
-for the automatic static analysis of Java Programs.
-Wunderhorn is an integration of powerful existing technologies:
+### Verifying freedom from language-level errors
 
-  * [Sawja](http://sawja.inria.fr/) is used to reduce JVM bytecode programs to
-    the a stackless, unstructured intermediate representation.
-  * We apply the semantics of the instructions in the intermediate representation
-    to construct a system of Constrained Horn Clauses (CHC System).
-  * [Z3](https://github.com/Z3Prover/z3) can solve CHC Systems using Fixed-Point
-    solvers. We use the [Duality](https://www.microsoft.com/en-us/research/project/duality/)
-    engine to solve CHC systems.
+`wunderhorn` automatically attempts to verify that a given program
+cannot throw one of several exceptions that is typically a result of
+an error, such as:
 
-### Custom Static Assertions
+* Accessing an array out of bounds
 
-Wunderhorn allows users to specify custom properties for their programs. In this
-example, the user wants to make sure that this naive implementation of the Fibonnaci
-function always returns a non-negative value.
+* Attempting to divide by `0`
 
-```java
-public class Fib {
-  public static int fib(int n) {
-    if (n <= 0) return 0;
-    if (n == 1) return 1;
-    return fib(n-1) + fib(n-2);
-  }
-
-  public static void main(String[] args) {
-    int x = Wunderhorn.arby_int();
-    Wunderhorn.ensure(fib(x) >= 0);
-  }
-}
-```
-
-```
-$ wunderhorn Fib.java
-Safe!
-```
-
-### Automatic Error Detection
-
-Wunderhorn also performs *automatic* error detection. In this example, the user has
-written an implementation of a function for finding the *least common multiple* of
-two integers. However, this particular implementation is problematic. Computing the
-LCM of 0 and 0 results in a division by 0. Wunderhorn finds this particular bug
-and alerts the user so she can fix it.
+For example, consider the following implementation of a function that,
+given integers `m` and `n`, computes the _Least Common Multiple_ (LCM)
+of `m` and `n`:
 
 ```java
 public class LCM {
@@ -83,12 +45,89 @@ public class LCM {
 }
 ```
 
+This implementation is not safe: if it is given input `m = n = 0`, it
+will attempt to divide a number by `0`, and throw an exception.
+
+When `wunderhorn` is given the above implementation, it reports that
+that program is not safe:
+
 ```
 $ wunderhorn LCM.java
 Division by 0 possible at LCM.lcm line 13.
 ```
 
-Wunderhorn automatically checks for division by 0 and array out of bounds accesses.
+### Verifying satisfaction of custom static assertions
+
+`wunderhorn` allows users to express application-specific properties
+as assertions that that are verified statically. Consider the
+following implementation of the Fibonacci function, annotated with an
+assertion that specifies that the function `fib` should always return
+a non-negative value:
+
+```java
+public class Fib {
+  public static int fib(int n) {
+    if (n <= 0) return 0;
+    if (n == 1) return 1;
+    return fib(n-1) + fib(n-2);
+  }
+
+  public static void main(String[] args) {
+    int x = Wunderhorn.arby_int();
+    Wunderhorn.ensure(fib(x) >= 0);
+  }
+}
+```
+
+`wunderhorn` reports that `Fib` satisfies its assertion:
+
+```
+$ wunderhorn Fib.java
+Safe!
+```
+
+## Building wunderhorn
+
+To build `wunderhorn`, download a copy and `make` it:
+```
+$ git clone https://github.com/gt-wunderhorn/gt-wunderhorn
+$ cd gt-wunderhorn
+$ sudo make configure
+$ make
+$ sudo make install
+Safe!
+```
+
+## Using wunderhorn
+
+To use `wunderhorn`, run it on a Java source or JVM bytecode class
+that contains a `main` method, and is optionally annotated with
+assertions. Here is a shell session for running `wunderhorn` on one of
+its included examples, `Fib.java` given above:
+
+```
+$ cd example
+$ wunderhorn Fib.java
+Safe!
+```
+
+## Implementation
+
+`wunderhorn` is implemented in OCaml [OCaml](http://ocaml.org/). It
+uses several existing frameworks for performing program-analysis
+tasks. In particular, it uses:
+
+  * [Sawja](http://sawja.inria.fr/), which translats a given JVM
+    bytecode class to a stackless low-level intermediate
+    representation.
+
+  * [Z3](https://github.com/Z3Prover/z3), which attempts to solve a
+    given CHC system that formulates verifying program safety. In
+    particular, it uses the
+    [Duality](https://www.microsoft.com/en-us/research/project/duality/)
+    solver implemented within Z3.
+
+## Developers
 
 <center>
   <table style="border-collapse: collapse; border: none;">
@@ -123,10 +162,3 @@ Wunderhorn automatically checks for division by 0 and array out of bounds access
   </table>
 </center>
 
-## References
-
-[Microsoft Z3 Theorem Prover](https://github.com/Z3Prover/z3)
-
-[Sawja Static Analysis Workshop for Java](http://sawja.inria.fr/)
-
-[Duality](https://www.microsoft.com/en-us/research/project/duality/)
